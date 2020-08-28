@@ -1,0 +1,342 @@
+@import "elements/body.scss";
+@import "components/util.scss";
+
+@import "~/static/css/materialdesignicons.css";
+@import "~bulma/sass/utilities/_all";
+@import "~bulma";
+@import "~buefy/src/scss/buefy";
+
+@import url("https://fonts.googleapis.com/css2?family=Contrail+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Text+Me+One&display=swap");
+
+$speed-slow: 150ms !default;
+$speed-slower: 250ms !default;
+
+$primary: #00c58e;
+$link: #2f495e;
+$link-invert: findColorInvert($link);
+$link-focus-border: $link;
+$info: $link;
+$background: $grey-lighter;
+$primary-invert: findColorInvert($primary);
+$twitter: #4099ff;
+$twitter-invert: findColorInvert($twitter);
+$family-primary: "Text Me One", sans-serif;
+$family-secondary: "Contrail One", cursive;
+$white-ter: rgba(255, 255, 255, 0.4);
+$background-transparent: fade-out($white, 0.4);
+$primary-transparent: fade-out($primary, 0.3);
+$info-transparent: fade-out($info, 0.3);
+$minHeight: 300px;
+$size-medium: 2rem;
+$size-large: 6rem;
+$nav-height: calc(100vh - 56px - 2rem);
+$panelColor: darken($info, 10);
+
+$link-invert: $primary-invert !default;
+$link-visited: $grey !default;
+$link-focus-border: $primary !default;
+
+$label-weight: $weight-semibold !default;
+
+$brand-color: #357f8a;
+$breakpoint-small: 480px;
+$breakpoint-medium: 768px;
+$breakpoint-large: 960px;
+$breakpoint-xlarge: 1220px;
+$breakpoint-mini-max: ($breakpoint-small - 1);
+$breakpoint-small-max: ($breakpoint-medium - 1);
+$breakpoint-medium-max: ($breakpoint-large - 1);
+$breakpoint-large-max: ($breakpoint-xlarge - 1);
+
+#__nuxt .hero-body.has-text-centered.carrusel-titel {
+  position: absolute;
+  bottom: 0rem;
+  z-index: 99;
+  left: 0rem;
+  padding: 1.5rem 3rem;
+  min-width: 30%;
+  background-color: $background-transparent;
+}
+
+#top-carrusel,
+#top-carrusel span.image {
+  max-height: $nav-height;
+  min-height: $nav-height;
+  overflow: hidden;
+}
+
+#top-carrusel.blog-carrusel {
+  background-color: #1b253e;
+}
+
+#top-carrusel.blog-carrusel .image {
+  background-color: #1b253e;
+}
+
+#top-carrusel.blog-carrusel .image img {
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  top: 25%;
+}
+
+#top-carrusel.blog-carrusel .image a {
+  text-align: left;
+  margin: 0px 0px;
+  display: block;
+  color: #0a0a0a;
+  font-weight: bold;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  top: 33%;
+}
+
+#top-carrusel .hero .hero-body .title {
+  color: $info;
+  font-size: 3rem;
+  font-family: $family-secondary;
+  margin-bottom: 0.2rem;
+}
+
+#top-carrusel .image a {
+  text-align: left;
+  margin: 0px 0px;
+  display: block;
+  color: $black;
+  font-weight: bold;
+}
+
+// #__nuxt #top-carrusel.blog-carrusel .hero .hero-body .title {
+//   color: $primary;
+// }
+
+#__nuxt header {
+  border-top: $primary 8px solid;
+  // border-bottom: $primary 8px solid;
+  padding: 0.8rem 0rem;
+  margin-bottom: 3rem;
+  // background-color: $grey-lighter;
+  background-color: $panelColor;
+}
+
+#__nuxt nav {
+  // background-color: $grey-lighter;
+  background-color: $panelColor;
+}
+
+#__nuxt nav .navbar-start .navbar-item a {
+  color: $primary;
+  padding: 0.5rem;
+}
+
+#__nuxt nav .navbar-start .navbar-item a:hover {
+  border: $primary 1px solid;
+}
+
+#__nuxt nav .navbar-start .navbar-item a.nuxt-link-active.active {
+  color: $primary;
+  border: $primary 1px solid;
+}
+
+#__nuxt footer {
+  margin-top: 6rem;
+}
+
+footer {
+  border-top: $info 8px solid;
+  background-color: $panelColor;
+  color: $white;
+}
+footer a {
+  color: $primary;
+}
+footer a:hover {
+  color: $white;
+}
+
+.tile.is-child.notification.is-primary {
+  background-color: $primary-transparent;
+}
+
+.tile.is-child.notification.is-info {
+  background-color: $info-transparent;
+}
+
+a {
+  font-weight: bold;
+}
+
+#feature-icons .columns.is-vcentered .column {
+  text-align: center;
+  min-height: $minHeight;
+  background-color: $info;
+  margin: 2rem;
+  color: $white;
+  font-size: $size-medium;
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  font-family: $family-secondary;
+}
+
+#feature-icons {
+  background-color: $primary;
+}
+
+#feature-icons .columns.is-vcentered .column i,
+#feature-icons .columns.is-vcentered .column p {
+  flex: 4 4 100%;
+}
+
+#feature-icons .columns.is-vcentered .column i,
+#feature-icons .columns.is-vcentered .column i:before,
+#feature-icons .columns.is-vcentered .column i:after {
+  font-size: $size-large;
+}
+
+#feature-icons .columns div.column span {
+  display: block;
+  height: unset;
+  width: 100%;
+}
+
+a.navbar-item:focus,
+a.navbar-item:focus-within,
+a.navbar-item:hover,
+a.navbar-item.is-active,
+.navbar-link:focus,
+.navbar-link:focus-within,
+.navbar-link:hover,
+.navbar-link.is-active {
+  background-color: transparent;
+}
+
+#__nuxt .blog-card {
+  max-width: 450px;
+}
+
+@media all and (min-width: $breakpoint-large) {
+  .section {
+    min-height: 550px;
+    display: flex;
+  }
+  .section .container {
+    align-self: center;
+  }
+}
+
+@media all and (max-width: $breakpoint-xlarge) {
+  .column.is-one-third,
+  .column.is-one-third-tablet {
+    flex: none;
+    width: 26.333% !important;
+  }
+}
+
+@media all and (max-width: $breakpoint-medium) {
+  .columns.is-vcentered {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .column.is-one-third,
+  .column.is-one-third-tablet {
+    flex: 2 2 40%;
+    width: 40% !important;
+    min-width: 40%;
+  }
+}
+
+.message {
+  padding: 1rem;
+}
+
+#__nuxt .is-left-align {
+  text-align: left;
+  width: 100%;
+  // display: block;
+}
+
+#__nuxt .is-bold {
+  font-weight: bold;
+}
+
+.content.feature__icon {
+  height: auto;
+  max-height: unset;
+}
+
+.feature__icon {
+  width: calc(100% + 4rem);
+  height: auto;
+  background-color: $panelColor;
+  padding: 3rem;
+  margin-top: -1.25rem;
+  margin-left: -1.5rem;
+  max-width: unset;
+  max-height: 200px;
+}
+
+// .content.feature__icon {
+//   border: 1px solid $info;
+// }
+
+hr {
+  margin-bottom: 2rem;
+}
+
+#dev-box {
+  max-width: 500px;
+  margin-top: 3rem;
+  align-self: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.blog__body h3 {
+  margin-top: 1rem;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.blog__body blockquote {
+  padding: 1rem 0.5rem;
+  background-color: $grey-lighter;
+  border-radius: 5px;
+  margin: 1rem 0rem;
+  text-align: center;
+}
+
+#__nuxt .button.is-primary {
+  background-color: $primary;
+  color: $white;
+}
+
+#__nuxt a {
+  color: $primary;
+}
+
+#__nuxt .has-text-primary {
+  color: $primary !important;
+}
+
+#__nuxt .has-text-info {
+  color: $info !important;
+}
+
+.navbar-link.is-active,
+.navbar-link:focus,
+.navbar-link:focus-within,
+.navbar-link:hover,
+a.navbar-item.is-active,
+a.navbar-item:focus,
+a.navbar-item:focus-within,
+a.navbar-item:hover {
+  background-color: transparent;
+}

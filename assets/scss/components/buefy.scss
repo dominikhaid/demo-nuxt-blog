@@ -1,0 +1,87 @@
+// Import Bulma's core
+@import "~bulma/sass/utilities/_all";
+
+@import url("https://fonts.googleapis.com/css2?family=Contrail+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Text+Me+One&display=swap");
+
+// Set your colors
+$speed-slow: 150ms !default;
+$speed-slower: 250ms !default;
+
+$primary: #00c58e;
+$link: #2f495e;
+$link-invert: findColorInvert($link);
+$link-focus-border: $link;
+$info: $link;
+$background: $grey-lighter;
+$primary-invert: findColorInvert($primary);
+$twitter: #4099ff;
+$twitter-invert: findColorInvert($twitter);
+$family-primary: "Text Me One", sans-serif;
+$family-secondary: "Contrail One", cursive;
+$white-ter: rgba(255, 255, 255, 0.4);
+$background-transparent: fade-out($white, 0.4);
+$primary-transparent: fade-out($primary, 0.3);
+$info-transparent: fade-out($info, 0.3);
+$minHeight: 300px;
+$size-medium: 2rem;
+$size-large: 6rem;
+$nav-height: calc(100vh - 56px - 2rem);
+$panelColor: darken($info, 10);
+
+$link-invert: $primary-invert !default;
+$link-visited: $grey !default;
+$link-focus-border: $primary !default;
+
+$label-weight: $weight-semibold !default;
+
+$colors: (
+  "white": (
+    $white,
+    $black
+  ),
+  "link": (
+    $link,
+    $link-invert
+  ),
+  "black": (
+    $black,
+    $white
+  ),
+  "light": (
+    $light,
+    $light-invert
+  ),
+  "dark": (
+    $dark,
+    $dark-invert
+  ),
+  "primary": (
+    $primary,
+    $primary-invert
+  ),
+  "info": (
+    $info,
+    $info-invert
+  ),
+  "success": (
+    $success,
+    $success-invert
+  ),
+  "warning": (
+    $warning,
+    $warning-invert
+  ),
+  "danger": (
+    $danger,
+    $danger-invert
+  ),
+  "twitter": (
+    $twitter,
+    $twitter-invert
+  )
+);
+
+// Import Bulma and Buefy styles
+// @import "~bulma";
+// @import "~buefy/src/scss/buefy";
