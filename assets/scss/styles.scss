@@ -79,16 +79,16 @@ $breakpoint-large-max: ($breakpoint-xlarge - 1);
   margin-left: auto;
   margin-right: auto;
   position: unset;
-  margin-bottom: 10vh;
+  margin-bottom: 30vh;
   width: calc(100vw - 2rem);
 }
 
 #top-carrusel.blog-carrusel .image a {
   text-align: left;
- margin: unset;
- position: unset;
- top: unset;
- padding: 1rem;
+  margin: unset;
+  position: unset;
+  top: unset;
+  padding: 1rem;
   font-weight: bold;
   max-width: 900px;
 }
@@ -216,48 +216,60 @@ a.navbar-item.is-active,
   flex: 1 1 450px;
 }
 
-#top-carrusel, #top-carrusel span.image {
+#top-carrusel,
+#top-carrusel span.image {
   position: relative;
-display: flex;
-justify-content: center;
-align-content: flex-end;
-align-items: flex-end;
-  }
+  display: flex;
+  justify-content: center;
+  align-content: flex-end;
+  align-items: flex-end;
+}
 
+.carousel-items .image img {
+  flex: 1 1 100%;
+  justify-self: center;
+  display: flex !important;
+  position: unset;
+  height: max-content;
+  min-height: unset;
+  height: unset;
+  min-width: unset;
+  min-height: 100%;
+}
 
-  .carousel-items .image img {
-    flex: 1 1 100%;
-    justify-self: center;
-    display: flex !important;
-    position: unset;
-    height: max-content;
-    min-height: unset;
-    height: unset;
-    min-width: unset;
-    min-height: 100%;
-  }
+#top-carrusel,
+#top-carrusel span.image {
+  max-height: 135vw !important;
+  min-height: unset;
+  overflow: hidden;
+  height: calc(100vh - 56px - 2rem);
+}
 
-  #top-carrusel, #top-carrusel span.image {
-    max-height: 135vw !important;
-    min-height: unset;
-    overflow: hidden;
-    height: calc(100vh - 56px - 2rem);
-    }
+.carousel {
+  width: 100%;
+}
 
-    .carousel {
-      width: 100%;
-      }
+.card {
+  min-height: 670px;
+}
 
-      .card {
-        min-height: 670px;
-      }
+.columns.is-vcentered {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
 
-      .columns.is-vcentered {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-    
+.navbar-link.is-active,
+.navbar-link:focus,
+.navbar-link:focus-within,
+.navbar-link:hover,
+a.navbar-item.is-active,
+a.navbar-item:focus,
+a.navbar-item:focus-within,
+a.navbar-item:hover {
+  background-color: transparent !important;
+}
+
 @media all and (min-width: $breakpoint-large) {
   .section {
     min-height: 550px;
@@ -274,39 +286,34 @@ align-items: flex-end;
     flex: none;
     width: 26.333% !important;
   }
-
 }
 
-
 @media all and (max-width: 700px) {
-#__layout main section section,
-#__layout main div > section {
-  padding: 0;
+  #__layout main section section,
+  #__layout main div > section {
+    padding: 0;
   }
 }
 
 @media all and (max-width: $breakpoint-medium) {
- 
-  
   #__nuxt .hero-body.has-text-centered.carrusel-titel {
     padding: 1rem;
     padding: 1rem;
-    }
-    #top-carrusel .hero .hero-body .title {
+  }
+  #top-carrusel .hero .hero-body .title {
     font-size: 2rem;
     width: 100%;
     text-align: left;
-    }
-  
-    #__nuxt .has-text-info {
+  }
+
+  #__nuxt .has-text-info {
     width: 100%;
     display: block;
-    }
+  }
 
-#__nuxt .hero-body.has-text-centered.carrusel-titel {
-width: 100%;
-}
-
+  #__nuxt .hero-body.has-text-centered.carrusel-titel {
+    width: 100%;
+  }
 
   .columns.is-vcentered {
     display: flex;
