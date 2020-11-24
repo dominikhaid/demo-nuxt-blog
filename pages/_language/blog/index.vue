@@ -1,52 +1,12 @@
 <template>
   <div>
-    <section class="section hero">
-      <div class="container">
-        <div class="hero-body">
-          <h1 class="title">Blog Component created with Storyblok</h1>
-          <h2 class="subtitle">Organize your content for the world.</h2>
-          <div class="content">
-            <b-message>
-              <a href="https://www.storyblok.com/" target="_blank">Stroyblok</a>
-              is an API-based CMS wich helps you deliver and organize your
-              content acrosss the world.
-              <br />They got outstandig features such
-              as the live editor.
-              <a
-                href="https://www.storyblok.com/"
-                target="_blank"
-              >Stroyblok</a>
-              helps you to create and share your content in almmost no time.
-            </b-message>
-          </div>
-        </div>
-      </div>
-    </section>
 
-    <section id="feature-icons" class="section">
-      <div class="container">
-        <div class="columns is-vcentered">
-          <div class="column is-one-third">
-            <b-icon class="has-text-primary" icon="mdi mdi-coffee" size="is-large"></b-icon>
-            <p>User friendly Web Ui</p>
-          </div>
-          <div class="column is-one-third">
-            <b-icon class="has-text-primary" icon="mdi mdi-api" size="is-large"></b-icon>
-            <p>API based</p>
-          </div>
-          <div class="column is-one-third">
-            <b-icon class="has-text-primary" icon="mdi mdi-cog" size="is-large"></b-icon>
-            <p>Dependency free</p>
-          </div>
-        </div>
-      </div>
-    </section>
 
     <section class="section hero">
       <div class="container">
         <div class="hero-body">
-          <h1 class="title">Blogpots</h1>
-          <h2 class="subtitle">Find some sample blog posts below.</h2>
+          <h1 class="title">Blog Posts</h1>
+          <h2 class="subtitle">Find Some Sample Blog Posts Below.</h2>
           <hr />
           <div class="content">
             <div class="columns is-vcentered">
@@ -92,6 +52,50 @@
         </div>
       </div>
     </section>
+
+    <section class="section hero">
+      <div class="container">
+        <div class="hero-body">
+          <h1 class="title">Blog Component Created with Storyblok</h1>
+          <h2 class="subtitle">Organize your Content for the World.</h2>
+          <div class="content">
+            <b-message>
+              <a href="https://www.storyblok.com/" target="_blank">Stroyblok</a>
+              is an API-based CMS wich helps you deliver and organize your
+              content acrosss the world.
+              <br />They got outstandig features such
+              as the live editor.
+              <a
+                href="https://www.storyblok.com/"
+                target="_blank"
+              >Stroyblok</a>
+              helps you to create and share your content in almost no time.
+            </b-message>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="feature-icons" class="section">
+      <div class="container">
+        <div class="columns is-vcentered">
+          <div class="column is-one-third">
+            <b-icon class="has-text-primary" icon="mdi mdi-coffee" size="is-large"></b-icon>
+            <p>User Friendly Web Ui</p>
+          </div>
+          <div class="column is-one-third">
+            <b-icon class="has-text-primary" icon="mdi mdi-api" size="is-large"></b-icon>
+            <p>API Based</p>
+          </div>
+          <div class="column is-one-third">
+            <b-icon class="has-text-primary" icon="mdi mdi-cog" size="is-large"></b-icon>
+            <p>Dependency Free!</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    
   </div>
 </template>
 

@@ -34,12 +34,12 @@ export default {
       carousel: 0,
       animated: "fade",
       drag: false,
-      autoPlay: true,
+      autoPlay: false,
       pauseHover: false,
       pauseInfo: false,
       repeat: true,
       pauseType: "is-primary",
-      interval: 3000,
+      interval: 4000,
       items: [
         {
           title: "Created with Stroyblok",
@@ -47,7 +47,7 @@ export default {
           link: "https://www.storyblok.com/",
         },
         {
-          title: "Organize your content for the world.",
+          title: "Organize your Content for the World.",
           image: "images/stroyblok.svg",
           link: "https://www.storyblok.com/",
         },

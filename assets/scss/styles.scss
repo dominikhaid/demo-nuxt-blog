@@ -75,24 +75,22 @@ $breakpoint-large-max: ($breakpoint-xlarge - 1);
 }
 
 #top-carrusel.blog-carrusel .image img {
-  max-width: 700px;
+  max-width: 900px;
   margin-left: auto;
   margin-right: auto;
-  position: relative;
-  top: 25%;
+  position: unset;
+  margin-bottom: 10vh;
+  width: calc(100vw - 2rem);
 }
 
 #top-carrusel.blog-carrusel .image a {
   text-align: left;
-  margin: 0px 0px;
-  display: block;
-  color: #0a0a0a;
+ margin: unset;
+ position: unset;
+ top: unset;
+ padding: 1rem;
   font-weight: bold;
-  max-width: 700px;
-  margin-left: auto;
-  margin-right: auto;
-  position: relative;
-  top: 33%;
+  max-width: 900px;
 }
 
 #top-carrusel .hero .hero-body .title {
@@ -142,10 +140,6 @@ $breakpoint-large-max: ($breakpoint-xlarge - 1);
   border: $primary 1px solid;
 }
 
-#__nuxt footer {
-  margin-top: 6rem;
-}
-
 footer {
   border-top: $info 8px solid;
   background-color: $panelColor;
@@ -186,6 +180,7 @@ a {
 
 #feature-icons {
   background-color: $primary;
+  min-height: 100vh;
 }
 
 #feature-icons .columns.is-vcentered .column i,
@@ -218,8 +213,51 @@ a.navbar-item.is-active,
 
 #__nuxt .blog-card {
   max-width: 450px;
+  flex: 1 1 450px;
 }
 
+#top-carrusel, #top-carrusel span.image {
+  position: relative;
+display: flex;
+justify-content: center;
+align-content: flex-end;
+align-items: flex-end;
+  }
+
+
+  .carousel-items .image img {
+    flex: 1 1 100%;
+    justify-self: center;
+    display: flex !important;
+    position: unset;
+    height: max-content;
+    min-height: unset;
+    height: unset;
+    min-width: unset;
+    min-height: 100%;
+  }
+
+  #top-carrusel, #top-carrusel span.image {
+    max-height: 135vw !important;
+    min-height: unset;
+    overflow: hidden;
+    height: calc(100vh - 56px - 2rem);
+    }
+
+    .carousel {
+      width: 100%;
+      }
+
+      .card {
+        min-height: 670px;
+      }
+
+      .columns.is-vcentered {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
 @media all and (min-width: $breakpoint-large) {
   .section {
     min-height: 550px;
@@ -236,9 +274,40 @@ a.navbar-item.is-active,
     flex: none;
     width: 26.333% !important;
   }
+
+}
+
+
+@media all and (max-width: 700px) {
+#__layout main section section,
+#__layout main div > section {
+  padding: 0;
+  }
 }
 
 @media all and (max-width: $breakpoint-medium) {
+ 
+  
+  #__nuxt .hero-body.has-text-centered.carrusel-titel {
+    padding: 1rem;
+    padding: 1rem;
+    }
+    #top-carrusel .hero .hero-body .title {
+    font-size: 2rem;
+    width: 100%;
+    text-align: left;
+    }
+  
+    #__nuxt .has-text-info {
+    width: 100%;
+    display: block;
+    }
+
+#__nuxt .hero-body.has-text-centered.carrusel-titel {
+width: 100%;
+}
+
+
   .columns.is-vcentered {
     display: flex;
     flex-wrap: wrap;

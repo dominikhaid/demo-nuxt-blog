@@ -42,7 +42,7 @@ export default {
       pauseInfo: false,
       repeat: true,
       pauseType: "is-primary",
-      interval: 3000,
+      interval: 4000,
     };
   },
   methods: {},
